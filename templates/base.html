@@ -22,11 +22,17 @@
 					</li>
 				</ul>
 			</div>
+			<div class="container">
+    {% for message in get_flashed_messages() %}
+        <div class="alert-danger">{{ message }}</div>
+    {% endfor %}
+
+		</div>
 		</nav>
 		{% block content %} {% endblock %}
 		<footer>
 			<hr />
-			<p class="text-center">Notify</p>
+			<p class="bottom-text">Notify</p>
 		</footer>
 	</body>
 </html>

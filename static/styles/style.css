@@ -2,12 +2,44 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     font-size: larger;
+    background-color: ;
+}
+
+h1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    padding: 30px;
+    margin: auto;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+a.navbar-brand{
+    font-size: xx-large;
+    background-color: aquamarine;
+    font-style: oblique;
+    font-family: cursive;
+    font-weight: bolder;
+    font-style: underline;
+    font-style: italic;
+    text-decoration: underline;
+    color: saddlebrown;
 }
 
 .navbar-brand{
     align-items: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
+    height: 50px;
+    align-items: center
+    font-weight: bold
 }
 
 .navbar-banner{
@@ -15,9 +47,218 @@ body {
     display: flex;
 }
 
-.text-center{
+.navbar-collapse{
+    background-color: saddlebrown;
+    padding: 20px;
+    border-radius: 15px;
+}
+.navbar-nav{
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+
+.bottom-text{
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-style: oblique;
+    font-family: cursive;
+    font-weight: bolder;
+    text-decoration: underline;
+    text-decoration-color: black;
+    color: saddlebrown;
+}
+
+
+.nav-item{
     background: whitesmoke;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    font-size: x-large;
+    height: 50px;
+    margin: 10px 10px auto 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.nav-item:hover{
+    background-color: #f9d2b2;
+    border-color: #333;
+    color: #333;
+}
+
+
+/* For home.html */
+.col-text-center{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.row{
+    margin: 20px 200px auto 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rosybrown;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.btn-primary{
+    background: whitesmoke;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    font-size: x-large;
+    height: 50px;
+    margin: 10px 10px auto 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-primary:hover{
+    background-color: #f9d2b2;
+    border-color: #333;
+    color: #333;
+}
+
+
+
+.submit-add-btn{
+    background: whitesmoke;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    font-size: x-large;
+    height: 50px;
+    margin: 10px 10px auto 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.submit-add-btn:hover{
+    background-color: #f9d2b2;
+    border-color: #333;
+    color: #333;
+}
+
+.form-group{
+    display: contents;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: space-around;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.card{
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15px;
+    border-color: black;
+    margin: 2px;
+    text-align: center;
+}
+
+.card-body{
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+    border: 2px solid black;
+}
+
+.alert-danger{
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.d-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.edit-btn-primary{
+    background-color: wheat;
+    border-radius: 5px;
+    /* margin: 5px; */
+    padding: 3px;
+    color: black;
+}
+
+.edit-btn-primary:hover{
+    background-color: #f9d2b2;
+    border-color: #333;
+    color: #333;
+    cursor: pointer;
+}
+
+.btn-danger-btn-sm{
+    background-color: wheat;
+    border-radius: 5px;
+    /* margin: 5px; */
+    padding: 3px;
+}
+
+.btn-danger-btn-sm:hover{
+    background-color: #f9d2b2;
+    border-color: #333;
+    color: #333;
+    cursor: pointer;
+}
+
+.card-title{
+    text-align: center;
+    font-size: large;
+    background-color: burlywood;
 }
