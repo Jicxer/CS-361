@@ -12,19 +12,23 @@
         </input>
     </div>
 
+    <div id="editable_text_box">
+        <textarea rows="15" name="content" id="editable_text" style="width: 100%; max-width: 100%; min-width: 100%; height: 380.64px; resize: vertical;" placeholder="Your text..." autofocus="" spellcheck="false"
+            class="form-control">{{ request.form['content'] }}</textarea>
+        </div>
+
+    <div id = "options">
+
     <div class="form-group">
-        <label for="content">Content</label>
-        <textarea name="content" placeholder="Post content"
-                  class="form-control">{{ request.form['content'] or post['content'] }}</textarea>
+        <button type="submit" class="btn btn-primary">Save</button>
     </div>
-    <div class="form-group">
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </div>
+    <form action="{{ url_for('delete', id=post['id']) }}" method="POST">
+        <input type="submit" value="Delete Post"
+                class="btn-delete"
+                onclick="return confirm('Are you sure you want to delete this note?')">
+    </form>
+</div>
 </form>
 <hr>
-<form action="{{ url_for('delete', id=post['id']) }}" method="POST">
-    <input type="submit" value="Delete Post"
-            class="btn btn-danger btn-sm"
-            onclick="return confirm('Are you sure you want to delete this post?')">
-</form>
+
 {% endblock %}

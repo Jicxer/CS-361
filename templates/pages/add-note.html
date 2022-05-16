@@ -1,9 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>{% block title %} Create a New Post {% endblock %}</h1>
+<h1>{% block title %} Create a New Note {% endblock %}</h1>
 
 <form method="post">
+
+
+        
     <div class="form-group">
         <label for="title">Title</label>
         <input type="text" name="title"
@@ -11,13 +14,13 @@
                value="{{ request.form['title'] }}"></input>
     </div>
 
+    <div id="editable_text_box">
+        <textarea rows="15" name="content" id="editable_text" style="width: 100%; max-width: 100%; min-width: 100%; height: 380.64px; resize: vertical;" placeholder="Your text..." autofocus="" spellcheck="false"
+            class="form-control">{{ request.form['content'] }}</textarea>
+        </div>
+
     <div class="form-group">
-        <label for="content">Content</label>
-        <textarea name="content" placeholder="Post content"
-                  class="form-control">{{ request.form['content'] }}</textarea>
-    </div>
-    <div class="form-group">
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Save</button>
     </div>
 </form>
 {% endblock %}
