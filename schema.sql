@@ -1,3 +1,4 @@
+
 DROP TABLE IF EXISTS posts;
 
 CREATE TABLE posts(
@@ -6,3 +7,4 @@ CREATE TABLE posts(
     title TEXT NOT NULL,
     content TEXT NOT NULL
 );
+

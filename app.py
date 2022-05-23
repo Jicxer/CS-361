@@ -58,6 +58,25 @@ def addNote():
 
         return redirect("/")
 
+@app.route("/add-recipes", methods=['GET','POST'])
+def addRecipe():
+    if(request.method == "GET"):
+
+        return render_template("pages/add-recipes.html",homeIsActive=False,addNoteIsActive=True)
+
+    elif (request.method == "POST"):
+
+        # get the fields data
+        name = request.form['name']
+        ingredients = request.form['email']
+        conn = get_db_connection()
+        conn.execute('INSERT INTO $TBL_STUDENT (name, email) VALUES (?, ?)',
+                        (name, ingredients))
+        conn.commit()
+        conn.close()
+
+        return redirect("/")
+
 
 @app.route('/<int:id>/edit', methods=('GET', 'POST'))
 def edit(id):
@@ -80,7 +99,7 @@ def edit(id):
 
     return render_template('pages/edit-notes.html', post=post)
 
-@app.route('/<int:id>/delete', methods=('POST',))
+@app.route('/<int:id>/delete', methods=('POST', 'GET'))
 def delete(id):
     post = get_post(id)
     conn = get_db_connection()

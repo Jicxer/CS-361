@@ -4,6 +4,10 @@
 
     <h2>{% block title %} {{ post['title'] }} {% endblock %}</h2>
     <span class="badge badge-primary">{{ post['created'] }}</span>
-    <p>{{ post['content'] }}</p>
+    <p>{{ post['content'] }}</p> 
+
+
+    <h2>{% block title %} {{ post['name'] }} {% endblock %}</h2>
+    <p>{{ post['email'] }}</p>
     
 {% endblock %}
