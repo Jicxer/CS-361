@@ -1,0 +1,28 @@
+Title	Rating Value	Languages	Year
+The Incredible Hulk	6.8	[English,Portuguese,Spanish]	2008
+Sherlock Holmes	7.6	[English,French]	2009
+The Good, the Bad and the Ugly	8.8	[English,French,Italian]	1966
+Iron Man	7.9	[English,Persian,Urdu,Arabic,Hungarian]	2008
+Iron Man 2	7	[English,French,Russian]	2010
+Iron Man 3	7.2	[English]	2013
+The Boring Object	2.1	[North Levantine Arabic,English]	1992
+Thor: Ragnarok	7.9	[English]	2017
+The Avengers	8.1	[English,Black Mountain Monpa,Russian,Hindi]	2012
+Doctor Strange	7.5	[English]	2016
+Avengers: Infinity War	8.5	[English]	2018
+Avengers: Age of Ultron	7.4	[English,Korean,Bainouk-Gunyaamolo]	2015
+Thor	7	[English]	2011
+Thor: The Dark World	7	[English]	2013
+Spider-Man: Homecoming	7.5	[English,Spanish]	2017
+Captain America: The First Avenger	6.9	[English,Norwegian,French]	2011
+Captain America: Civil War	7.8	[English,German,Russian,Romanian,Hindi]	2016
+Ant-Man	7.3	[English]	2015
+Captain America: The Winter Soldier	7.8	[English,French]	2014
+Mary Queen of Scots	6.9	[English]	2018
+Revolting Rhymes Part One	7.7	[English,Swedish]	2016
+The Glass Castle	7.2	[English]	2017
+Free Fire	6.4	[English]	2016
+Right on Track	6.6	[English]	2003
+Rise of the Guardians	7.3	[English,French]	2012
+Anna Karenina	8.1	[English]	2012
+Additional Text at the bottom too!
